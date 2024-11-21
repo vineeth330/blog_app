@@ -1,0 +1,8 @@
+<form #saveform="ngForm" (ngSubmit)="updatedata(saveform.value)" style="text-align: center;">
+    <input type="hidden"[value]="obj.id" ngModel name="id" [(ngModel)]="obj.id"><br><br>
+    <input type="text"[value]="obj.title" ngModel name="title" [(ngModel)]="obj.title"><br><br>
+    <input type="text" [value]="obj.content" ngModel name="content" [(ngModel)]="obj.content"><br><br>
+    <input type="text"[value]="obj.author" ngModel name="author" [(ngModel)]="obj.author"><br><br>
+   
+    <input type="submit" value="update" class="btn btn-success">
+</form>

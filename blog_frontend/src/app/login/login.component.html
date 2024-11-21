@@ -1,0 +1,9 @@
+<div class="login-container" style="text-align: center;">
+    <h2 class="text-primary">Login</h2>
+    <form #form1="ngForm" (ngSubmit)="login(form1.value)" class="login-form">
+      <input type="text" name="username" placeholder="Username" ngModel><br><br>
+      <input type="password" name="password" placeholder="Password" ngModel><br><br>
+      <button type="submit" class="btn btn-success">Login</button>
+    </form>
+  </div>
+  

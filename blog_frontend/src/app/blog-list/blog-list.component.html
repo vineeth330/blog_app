@@ -1,0 +1,15 @@
+<br>
+<div  style="text-align: center;">
+<a routerLink="/create" routerLinkActive="active" class="btn btn-danger">Create Blog</a> &nbsp;
+<h2 class="text-primary">Blog Posts</h2>
+<ul>
+  <li *ngFor="let post of ary">
+    <h3><b>Title:</b> {{ post.title }}</h3>
+    <p><b>Content:</b>  {{ post.content }}</p>
+    <p><strong>Author: {{ post.author }}</strong></p>
+    <button class="btn btn-warning" (click)="editdata(post.id)">update</button>
+    <button class="btn btn-danger" (click)="deletedata(post.id)">delete</button>
+
+  </li>
+</ul>
+</div>
